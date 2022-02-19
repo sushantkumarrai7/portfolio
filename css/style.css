@@ -2947,6 +2947,68 @@ h6 {
         border-color: #fff;
         box-shadow: 0px 10px 30px 0px rgba(153, 153, 153, 0.1); }
 
+
+
+
+.testi_slider.owl-carousel .owl-dots .owl-dot.active span,
+.testi_slider.owl-carousel .owl-dots .owl-dot:hover span {
+		    background: #56A3F8;
+		    transform: translate3d(0px, -50%, 0px) scale(0.7);
+		}
+.testi_slider.owl-carousel .owl-dots{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+.testi_slider.owl-carousel .owl-dots .owl-dot{
+	display: inline-block;
+}
+		.testi_slider.owl-carousel .owl-dots .owl-dot span {
+		    background: #E3E3E3;
+		    display: inline-block;
+		    height: 20px;
+                     border-radius: 30%;
+		    margin: 30px 2px 5px;
+		    transform: translate3d(0px, -50%, 0px) scale(0.3);
+		    transform-origin: 50% 50% 0;
+		    transition: all 250ms ease-out 0s;
+		    width: 20px;
+		}
+
+
+.owl-prev span, .owl-next span {
+	color: #E3E3E3;
+}
+
+.owl-prev span:hover, 
+.owl-next span:hover {
+	color: #56A3F8;
+}
+
+.owl-prev, .owl-next {
+	position: absolute;
+	 margin: 20px 0px 0px;
+	height: 100%;
+}
+
+.owl-prev {
+	left: -20px;
+}
+
+.owl-next {
+	right: 0px;
+}
+
+/* removing blue outline from buttons */
+button:focus, button:active {
+   outline: none;
+}
+
+
+
+
+
+
 .testi_inner .col-lg-3 {
   vertical-align: middle;
   align-self: center; }

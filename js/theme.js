@@ -147,24 +147,29 @@
                 loop:true,
                 margin: 30,
                 items: 3,
-                nav: false,
+                nav: true,
                 autoplay: true,
                 smartSpeed: 1500,
-                dots:true, 
+                dots: true, 
                 responsiveClass: true,
+
+	navText: ['<span class="typcn typcn-chevron-left fa-2x"></span>','<span class=" typcn typcn-chevron-right fa-2x"></span>'],
                 responsive: {
                     0: {
-                        items: 1,
+                        items: 1
                     },
                     768: {
-                        items: 3,
-                    },
+		                items: 2
+		              },
+		              1170: {
+		                
+                        items: 3
+                    }
                 }
             })
         }
     }
     testimonials_slider();
-	
 	
 	/*----------------------------------------------------*/
     /*  Testimonials Slider
