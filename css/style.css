@@ -3169,6 +3169,51 @@ button:focus, button:active {
 
 
 
+/*---------------------Back To Top Button Style------------------------------- */
+
+#button {
+  display: inline-block;
+  background-color: #F8B600;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #222222;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*---------------------End Of Back To Top Button Style------------------------------- */
+
+
+
+
+
 /* End Footer Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
